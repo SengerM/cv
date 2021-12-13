@@ -7,9 +7,6 @@
 }
 
 body {
-/*
-	background-color: #ffffff;
-*/
 	padding: 10px;
 	font-family: sans-serif;
 	text-align: justify;
@@ -51,7 +48,7 @@ h4, h5, h6, h7 {
 	background: linear-gradient(to right, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%);
 }
 #sticky_header.is_pinned #my_name {
-	font-size: 300%;
+	font-size: 200%;
 }
 /* --------------- */
 #current_position {
@@ -69,7 +66,8 @@ h4, h5, h6, h7 {
 }
 /* --------------- */
 table.chronological {
-	border-collapse: collapse;
+	border-collapse: separate;
+	border-spacing: 0 10px;
 	width: 100%;
 }
 table.chronological td {
@@ -77,8 +75,10 @@ table.chronological td {
 	vertical-align: top;
 }
 table.chronological td:first-child {
-	width: 1px;
-	white-space: nowrap;
+	width: 155px;
+	max-width: 26vw;
+	text-align: right;
+	border-right: 5px solid var(--light-background-color);
 }
 table.chronological tr {
 	transition: var(--transition-time);
@@ -89,6 +89,7 @@ table.chronological tr:hover {
 /* --------------- */
 a {
 	transition-duration: var(--transition-time);
+	word-break: break-word;
 }
 a:link {
 	color: inherit;
