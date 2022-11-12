@@ -2,7 +2,6 @@
 
 var labels_and_links = {
 	"Universität Zürich": "https://en.wikipedia.org/wiki/University_of_Zurich",
-	"UZH": "https://en.wikipedia.org/wiki/University_of_Zurich",
 	"PSI": "https://www.psi.ch/de",
 	"Universidad de Buenos Aires": "https://en.wikipedia.org/wiki/University_of_Buenos_Aires",
 	"CMS experiment": "https://cms.cern/",
