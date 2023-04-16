@@ -140,3 +140,9 @@ ul li:hover {
 .publication-title, .presentation-title {
 	font-style: italic;
 }
+
+img.header_table_icon {
+	display: inline-block;
+	height: 1.2em;
+	width:auto;
+}
