@@ -28,14 +28,14 @@ h4, h5, h6, h7 {
 	font-size: 100%;
 }
 
+/* --------------- */
 #my_name {
 	font-size: 400%;
-	font-family: 'Arizonia', cursive;
+	font-family: 'Rouge Script', cursive;
 	margin: 22px 0;
 	color: var(--headers-color);
 	transition-duration: var(--transition-time);
 }
-/* --------------- */
 #sticky_header {
 	width: 100%;
 	position: sticky;
