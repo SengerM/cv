@@ -94,6 +94,7 @@ a {
 a:link {
 	color: inherit;
 	text-decoration-color: var(--border-color);
+	text-decoration-thickness: 1px;
 }
 a:visited {
 	color: inherit;
