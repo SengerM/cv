@@ -107,7 +107,7 @@ a:hover {
 
 .button {
 	background-color: var(--light-background-color);
-	border: 2px solid var(--border-color);
+	border: 1px solid var(--border-color);
 	color: inherit;
 	padding: 5px;
 	text-align: center;
@@ -126,7 +126,7 @@ a:hover {
 /* --------------- */
 ul li {
 	transition-duration: var(--transition-time);
-	padding: 10px;
+	padding: 5px;
 }
 ul li:hover {
 	background: var(--light-background-color);
@@ -146,4 +146,16 @@ img.header_table_icon {
 	display: inline-block;
 	height: 1.2em;
 	width:auto;
+}
+
+.skill_bubble {
+	background: var(--light-background-color);
+	border: 2px solid var(--light-background-color);
+	padding: 5px 10px;
+	border-radius: var(--border-radius-for-box);
+	transition-duration: var(--transition-time);
+	user-select: none;
+}
+.skill_bubble:hover {
+	background: inherit;
 }
