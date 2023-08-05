@@ -2,7 +2,7 @@
 
 var labels_and_links = {
 	"LHC": "https://home.cern/science/accelerators/large-hadron-collider",
-	"skipper CCD": "https://arxiv.org/abs/1706.00028",
+	//~ "skipper CCD": "https://arxiv.org/abs/1706.00028",
 }
 
 for (const [label, link] of Object.entries(labels_and_links))
