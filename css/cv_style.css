@@ -13,9 +13,11 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	max-width: 888px;
 	margin: 0 auto;
+/*
 	background-image: linear-gradient(to bottom, #ffffff, #fafafa); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+*/
 }
 h1 {
 	border-bottom: 1px solid var(--border-color);
