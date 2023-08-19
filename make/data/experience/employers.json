@@ -1,0 +1,34 @@
+{
+	"UZH": {
+		"name": "University of Zurich (UZH)",
+		"logo": {
+			"src": "https://upload.wikimedia.org/wikipedia/en/5/5a/University_of_Zurich_seal.svg"
+		},
+		"website": "https://en.wikipedia.org/wiki/University_of_Zurich",
+		"location": "Zurich, Switzerland"
+	},
+	"CERN": {
+		"name": "CERN (European Organization for Nuclear Research)",
+		"logo": {
+			"src": "https://cern-ipmc.web.cern.ch/logo"
+		},
+		"website": "https://home.web.cern.ch/",
+		"location": "Geneva, Switzerland"
+	},
+	"Fermilab": {
+		"name": "Fermilab (Fermi national Accelerator Laboratory)",
+		"logo": {
+			"src": "https://media.licdn.com/dms/image/D560BAQF7gbn4533DPg/company-logo_200_200/0/1688415659475?e=1700697600&v=beta&t=Z-c44tuSYEur2eNc3LIPH8sWA3LRbm8AQSDmiV31kq4"
+		},
+		"website": "https://www.fnal.gov/",
+		"location": "Batavia, Illinois, USA"
+	},
+	"INTI": {
+		"name": "Instituto Nacional de Tecnología Industrial",
+		"logo": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/INTI.svg/1200px-INTI.svg.png"
+		},
+		"website": "https://www.argentina.gob.ar/inti",
+		"location": "San Martín, Buenos Aires, Argentina"
+	}
+}

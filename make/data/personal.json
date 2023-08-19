@@ -1,0 +1,44 @@
+[
+	{
+		"field_name": "Education",
+		"content": ["PhD in physics","Master in physics","Master in electronics engineering"],
+		"icon": {
+			"src": "https://cdn-icons-png.flaticon.com/128/3074/3074058.png"
+		}
+	},
+	{
+		"field_name": "Email",
+		"content": ["m.senger@hotmail.com","matias.senger@cern.ch"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Aiga_mail.svg"
+		}
+	},
+	{
+		"field_name": "Website",
+		"content": ["https://msenger.web.cern.ch"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg"
+		}
+	},
+	{
+		"field_name": "LinkedIn",
+		"content": ["https://www.linkedin.com/in/matias-senger-b281a1177"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+		}
+	},
+	{
+		"field_name": "Languages",
+		"content": ["🇪🇸 Spanish, native","🇬🇧 English, working proficiency (C1)","🇩🇪 German, basic proficiency (A2-B1)"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Language_icon.png"
+		}
+	},
+	{
+		"field_name": "Home address",
+		"content": ["Zurich, Switzerland (B permit)"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Home_font_awesome.svg"
+		}
+	}
+]

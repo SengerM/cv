@@ -1,0 +1,47 @@
+[
+	{
+		"position_name": "Doctoral researcher",
+		"employer": "UZH",
+		"start_date": "Jun 2020",
+		"end_date": "present",
+		"description": "R&D in ultra fast silicon pixel particle detectors and ASICs for application in future collider experiments. Design and implementation of testing procedures and experimental setups for diverse pixel technologies, as well as data analysis methodologies and algorithms. Evaluation and presentation of results, and comparison with state of the art in the ﬁeld. Presentations in international conferences and scientiﬁc journals. Also involved in teaching activities at the university. I produced the ﬁrst full characterization of the TI-LGAD pixel technology. Currently exploring machine learning reconstruction algoritms for the RSD pixel technology.",
+		"work_load": "Full-time",
+		"modality": "On-site"
+	},
+	{
+		"position_name": "Associate scientist",
+		"employer": "CERN",
+		"start_date": "Sep 2022",
+		"end_date": "present",
+		"description": "User of CERN facilities for my doctoral research. In particular the SPS North Area test beam.User of CERN facilities for my doctoral research. In particular the SPS North Area test beam.",
+		"work_load": "Full-time",
+		"modality": "Hybrid"
+	},
+	{
+		"position_name": "Research intern",
+		"employer": "Fermilab",
+		"start_date": "Jun 2019",
+		"end_date": "Dec 2019",
+		"description": "R&D in dark matter search. Carried out the ﬁrst developments of an experiment to search for dark matter using quantum nonlinear optics. As a side project, also explored applications of the novel skipper CCD technology to quantum imaging. My work was published in Physical Review Quantum, one of the leading journals in the ﬁeld.",
+		"work_load": "Full-time",
+		"modality": "On-site"
+	},
+	{
+		"position_name": "Junior research scientist",
+		"employer": "INTI",
+		"start_date": "Aug 2018",
+		"end_date": "May 2019",
+		"description": "Member of the Quantum Standards Laboratory. Worked on several projects that involved hardware design, data production, and data analysis.",
+		"work_load": "Part-time",
+		"modality": "On-site"
+	},
+	{
+		"position_name": "Research intern",
+		"employer": "INTI",
+		"start_date": "Aug 2017",
+		"end_date": "Aug 2018",
+		"description": "Designed, simulated, implemented and tested an innovative geometry for a high precision AC voltage divider for application in metrology. The prototype reached an accuracy of ~99.8% in a range from DC up to 10 kHz. The project was selected for participation at the CPEM 2018 conference, in Paris, which is the most important conference worldwide in the domain of electromagnetic measurements. I was awarded an Early Career Grant for this project.",
+		"work_load": "Part-time",
+		"modality": "On-site"
+	}
+]

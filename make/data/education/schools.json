@@ -1,0 +1,18 @@
+{
+	"UZH": {
+		"name": "University of Zurich (UZH)",
+		"logo": {
+			"src": "https://upload.wikimedia.org/wikipedia/en/5/5a/University_of_Zurich_seal.svg"
+		},
+		"website": "https://en.wikipedia.org/wiki/University_of_Zurich",
+		"location": "Zurich, Switzerland"
+	},
+	"UBA": {
+		"name": "University of Buenos Aires",
+		"logo": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/UBA.svg/2048px-UBA.svg.png"
+		},
+		"website": "https://en.wikipedia.org/wiki/University_of_Buenos_Aires",
+		"location": "Buenos Aires, Argentina"
+	}
+}

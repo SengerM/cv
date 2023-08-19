@@ -1,0 +1,20 @@
+[
+	{
+		"degree_level": "PhD",
+		"field": "Physical sciences",
+		"school": "UZH",
+		"end_date": "Jun 2024"
+	},
+	{
+		"degree_level": "Master's",
+		"field": "Physical sciences",
+		"school": "UBA",
+		"end_date": "Dec 2019"
+	},
+	{
+		"degree_level": "Master's",
+		"field": "Electronics engineering",
+		"school": "UBA",
+		"end_date": "Sep 2018"
+	}
+]
