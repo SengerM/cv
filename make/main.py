@@ -122,6 +122,7 @@ with doc:
 						tags.span(end_date.strftime('%b %Y') if end_date.date()!=datetime.datetime.today().date() else 'Present')
 	
 	tags.h1('Publications')
+	tags.p('Publications with main participation:')
 	with open('data/publications.json') as ifile:
 		publications_data = json.load(ifile)
 	with tags.div(style='display: flex; flex-direction: column;'):
@@ -135,11 +136,10 @@ with doc:
 				with tags.div(style='flex-shrink: 0; height: 3em; opacity: 0.5;'):
 					tags.img(
 						style = 'max-width: 100%; max-height: 100%;',
-						alt = schools_data[school_key]['name'], 
-						title = schools_data[school_key]['name'], 
+						alt = 'Publication icon',
 						src = 'https://static.thenounproject.com/png/1143700-200.png',
 					)
-				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
+				with tags.div(style='display: flex; flex-direction: column; gap: 1px;'):
 					tags.div(publication['title'], style='font-weight: bold;')
 					with tags.div():
 						tags.span(publication['journal'])
@@ -150,6 +150,13 @@ with doc:
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						tags.span('DOI: ')
 						tags.a(publication['DOI'], href=f'https://doi.org/{publication["DOI"]}')
+	
+	with tags.div(style='display: flex; flex-direction: row; gap: 10px; padding: 10px;'):
+		tags.a('Google scholar', cls='button', href='https://scholar.google.com/citations?user=WDjszAYAAAAJ&hl')
+		tags.a('iNSPIRE', cls='button', href='https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20a%20matias%20senger')
+		tags.a('arXiv', cls='button', href='https://arxiv.org/search/?query=matias+senger&searchtype=author&abstracts=show&order=-announced_date_first&size=50')
+
+
 	
 with open('../test.html', 'w') as ofile:
 	print(doc, file=ofile)
