@@ -1,0 +1,50 @@
+[
+	{
+		"title": "A Comprehensive Characterization of the TI-LGAD Technology",
+		"publisher": "MDPI",
+		"journal": "Sensors",
+		"publication_date": "Jul 2023",
+		"DOI": "10.3390/s23136225",
+		"abstract": "Pixelated low-gain avalanche diodes (LGADs) can provide both precision spatial and temporal measurements for charged particle detection; however, electrical termination between the pixels yields a no-gain region, such that the active area or fill factor is not sufficient for small pixel sizes. Trench-isolated LGADs (TI-LGADs) are a strong candidate for solving the fill-factor problem, as the p-stop termination structure is replaced by isolated trenches etched in the silicon itself. In the TI-LGAD process, the p-stop termination structure, typical of LGADs, is replaced by isolating trenches etched in the silicon itself. This modification substantially reduces the size of the no-gain region, thus enabling the implementation of small pixels with an adequate fill factor value. In this article, a systematic characterization of the TI-RD50 production, the first of its kind entirely dedicated to the TI-LGAD technology, is presented. Designs are ranked according to their measured inter-pixel distance, and the time resolution is compared against the regular LGAD technology."
+	},
+	{
+		"title": "Development of a timing chip prototype in 110 nm CMOS technology",
+		"publisher": "IOP Publishing",
+		"journal": "Journal of Physics: Conference Series 2374",
+		"publication_date": "Nov 2022",
+		"DOI": "10.1088/1742-6596/2374/1/012081",
+		"abstract": "We present a readout chip prototype for future pixel detectors with timing capabilities. The prototype is intended for characterizing 4D pixel arrays with a pixel size of 100×100 μm², where the sensors are Low Gain Avalanche Diodes (LGADs). The long term focus is towards a possible replacement of disks in the extended forward pixel system (TEPX) of the CMS experiment during the High Luminosity LHC (HL-LHC). The requirements for this ASIC are the incorporation of a Time to Digital Converter (TDC) in the small pixel area, low power consumption, and radiation tolerance up to 5×10¹⁵ neq cm⁻² to withstand the radiation levels in the innermost detector modules for 3000 fb⁻¹ of the HL-LHC (in the TEPX). A prototype has been designed and produced in 110 nm CMOS technology at LFoundry and UMC with different versions of TDC structures, together with a front end circuitry to interface with the sensors. The design of the TDC will be discussed, with the test set-up for the measurements, and the first results comparing the performance of the different structures."
+	},
+	{
+		"title": "Characterization of timing and spacial resolution of novel TI-LGAD structures before and after irradiation",
+		"publisher": "Elsevier",
+		"journal": "Nuclear Instruments and Methods in Physics Research",
+		"publication_date": "Jun 2021",
+		"DOI": "10.1016/j.nima.2022.167030",
+		"abstract": "The characterization of spacial and timing resolution of the novel Trench Isolated LGAD (TI-LGAD) technology is presented. This technology has been developed at FBK with the goal of achieving 4D pixels, where an accurate position resolution is combined in a single device with the precise timing determination for Minimum Ionizing Particles (MIPs). In the TI-LGAD technology, the pixelated LGAD pads are separated by physical trenches etched in the silicon. This technology can reduce the interpixel dead area, mitigating the fill factor problem. The TI-RD50 production studied in this work is the first one of pixelated TI-LGADs. The characterization was performed using a scanning TCT setup with an infrared laser and a 90Sr source setup."
+	},
+	{
+		"title": "Searching for Dark Particles with Quantum Optics",
+		"publisher": "American Physical Society",
+		"journal": "PRX Quantum",
+		"publication_date": "Sep 2021",
+		"DOI": "10.1103/PRXQuantum.2.030340",
+		"abstract": "We propose a way to use optical tools from quantum imaging and quantum communication to search for physics beyond the standard model. Spontaneous parametric down-conversion (SPDC) is a commonly used source of entangled photons in which pump photons convert to a signal-idler pair. We propose to search for “dark-SPDC” (dSPDC) events in which a new dark-sector particle replaces the idler. Though it does not interact, the presence of a dark particle can be inferred by the properties of the signal photon. Examples of dark states include axionlike particles and dark photons. We show that the presence of an optical medium opens the phase space of the down-conversion process, or decay, which would be forbidden in a vacuum. Search schemes are proposed that employ optical imaging and/or spectroscopy of the signal photons. The signal rates in our proposal scales with the second power of the small coupling to new physics, as opposed to light-shining-through-wall experiments, the signal of which scales with coupling to the fourth power. We analyze the characteristics of the optical media needed to enhance dSPDC and estimate the rate."
+	},
+	{
+		"title": "Resistive Voltage Divider Immersed in Potential Gradient Capacitive Compensation",
+		"publisher": "IEEE Xplore",
+		"journal": "2018 Conference on Precision Electromagnetic Measurements (CPEM 2018)",
+		"publication_date": "Jul 2018",
+		"DOI": "10.1109/CPEM.2018.8501240",
+		"abstract": "We describe the design of a novel geometry for implementing a resistive voltage divider for use in metrology, in the range of voltages from 0 to 100 V and frequencies from DC to 100 kHz. The resistors are placed inside a three metallic plate structure that not only produces a potential gradient accompanying that of the resistors themselves but also serves as bandwidth compensation and heat sink. The use of no dielectric substrate promises high linearity and very low parasitic effects. This work presents the theoretical background and a simple mathematical model."
+	},
+	{
+		"title": "",
+		"publisher": "",
+		"journal": "",
+		"publication_date": "",
+		"DOI": "",
+		"abstract": ""
+	}
+]

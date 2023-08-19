@@ -120,6 +120,36 @@ with doc:
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						end_date = datetime.datetime.strptime(education['end_date'], '%b %Y')
 						tags.span(end_date.strftime('%b %Y') if end_date.date()!=datetime.datetime.today().date() else 'Present')
-
+	
+	tags.h1('Publications')
+	with open('data/publications.json') as ifile:
+		publications_data = json.load(ifile)
+	with tags.div(style='display: flex; flex-direction: column;'):
+		for publication in publications_data:
+			if publication['title'] == '':
+				break
+			with tags.div(
+				style = f'display: flex; flex-direction: row; gap: 10px; padding: 10px; border-radius: {BORDER_RADIUS};',
+				cls = 'highlight_on_hover',
+			):
+				with tags.div(style='flex-shrink: 0; height: 3em; opacity: 0.5;'):
+					tags.img(
+						style = 'max-width: 100%; max-height: 100%;',
+						alt = schools_data[school_key]['name'], 
+						title = schools_data[school_key]['name'], 
+						src = 'https://static.thenounproject.com/png/1143700-200.png',
+					)
+				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
+					tags.div(publication['title'], style='font-weight: bold;')
+					with tags.div():
+						tags.span(publication['journal'])
+						tags.span(',')
+						tags.span(publication['publisher'])
+					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+						tags.span(publication['publication_date'])
+					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+						tags.span('DOI: ')
+						tags.a(publication['DOI'], href=f'https://doi.org/{publication["DOI"]}')
+	
 with open('../test.html', 'w') as ofile:
 	print(doc, file=ofile)
