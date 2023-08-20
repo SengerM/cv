@@ -164,7 +164,7 @@ def generate_publications():
 		tags.a('arXiv', cls='button', href='https://arxiv.org/search/?query=matias+senger&searchtype=author&abstracts=show&order=-announced_date_first&size=50')
 
 def generate_skill_bubble(skill):
-	n_stars = 1 if skill['Skillfulness (1-10)']>=8 else 0
+	n_stars = 0#1 if skill['Skillfulness (1-10)']>=8 else 0
 	tags.div(
 		skill['skill_name'] + (' '+'⭐'*n_stars)*(n_stars>0),
 		cls = 'skill_bubble',
