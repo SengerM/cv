@@ -9,6 +9,8 @@ import logging
 
 BORDER_RADIUS = '0.5em'
 LIGHTER_TEXT_COLOR = '#878787'
+DATES_FORMAT = '%b %Y'
+FIELDS_SEPARATOR = '·'
 
 def responsive_logo(**image_attributes):
 	with tags.div(style='flex-shrink: 0; width: 50px;', cls='responsive_logo'):
@@ -63,7 +65,7 @@ def generate_experience():
 					tags.div(experience['position_name'], style='font-weight: bolder;')
 					with tags.div():
 						tags.span(employers_data[employer_key]['name'])
-						tags.span('·')
+						tags.span(FIELDS_SEPARATOR)
 						tags.span(experience['work_load'])
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						start_date = datetime.datetime.strptime(experience['start_date'], '%b %Y')
@@ -71,15 +73,15 @@ def generate_experience():
 							end_date = datetime.datetime.today()
 						else:
 							end_date = datetime.datetime.strptime(experience['end_date'], '%b %Y')
-						tags.span(start_date.strftime('%b %Y'))
+						tags.span(start_date.strftime(DATES_FORMAT))
 						tags.span('→')
-						tags.span(end_date.strftime('%b %Y') if end_date.date()!=datetime.datetime.today().date() else 'Present')
-						tags.span('·')
+						tags.span(end_date.strftime(DATES_FORMAT) if end_date.date()!=datetime.datetime.today().date() else 'Present')
+						tags.span(FIELDS_SEPARATOR)
 						tags.span(humanize.precisedelta(end_date-start_date, minimum_unit='months', format="%0.0f"))
 					
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						tags.span(employers_data[employer_key]['location'])
-						tags.span('·')
+						tags.span(FIELDS_SEPARATOR)
 						tags.span(experience['modality'])
 					tags.div(experience['description'])
 
@@ -106,11 +108,11 @@ def generate_education():
 					tags.div(schools_data[school_key]['name'], style='font-weight: bolder;')
 					with tags.div():
 						tags.span(education['degree_level'])
-						tags.span('·')
+						tags.span(FIELDS_SEPARATOR)
 						tags.span(education['field'])
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						end_date = datetime.datetime.strptime(education['end_date'], '%b %Y')
-						tags.span(end_date.strftime('%b %Y') if end_date.date()!=datetime.datetime.today().date() else 'Present')
+						tags.span(end_date.strftime(DATES_FORMAT) if end_date.date()!=datetime.datetime.today().date() else 'Present')
 
 def generate_publications():
 	with open('data/publications.json') as ifile:
@@ -128,7 +130,7 @@ def generate_publications():
 				cls = 'highlight_on_hover',
 			):
 				responsive_logo(
-					style = 'max-width: 100%; max-height: 100%;',
+					style = 'max-width: 100%; max-height: 100%; opacity: .4;',
 					alt = 'Publication icon',
 					src = 'https://static.thenounproject.com/png/1143700-200.png',
 				)
@@ -137,7 +139,7 @@ def generate_publications():
 					if all([_ in publication for _ in {'journal','publisher'}]):
 						with tags.div():
 							tags.span(publication['journal'])
-							tags.span('·')
+							tags.span(FIELDS_SEPARATOR)
 							tags.span(publication['publisher'])
 					else:
 						logging.warning(f'Publication {repr(publication["title"])} has no info for "journal" and or "publisher", will skip these fields for this particular publication.')
@@ -191,6 +193,56 @@ def generate_skills():
 						else:
 							generate_skill_bubble(skill)
 
+def generate_presentations_in_conferences_and_events():
+	presentations_data = pandas.read_csv(
+		'data/presentations.csv',
+		date_parser = lambda x: datetime.datetime.strptime(x, '%m/%d/%y'),
+		parse_dates = ['date'],
+		dtype = {
+			'event_name': str,
+			'place': str,
+			'type': str,
+			'url': str,
+			'presentation_title': str,
+			'modality': str,
+		},
+		keep_default_na = False,
+	)
+	
+	tags.h1('Presentations in international conferences and events')
+	with tags.div(style='display: flex; flex-direction: column;'):
+		for _,presentation in presentations_data.sort_values('date', ascending=False).iterrows():
+			with tags.div(
+				style = f'display: flex; flex-direction: row; gap: 10px; padding: 10px; border-radius: {BORDER_RADIUS};',
+				cls = 'highlight_on_hover',
+			):
+				LOGOS = {
+					'presentation': 'https://cdn-icons-png.flaticon.com/512/4270/4270722.png',
+					'lightning talk': 'https://cdn-icons-png.flaticon.com/512/4270/4270722.png',
+					'poster': 'https://cdn.iconscout.com/icon/free/png-256/free-frame-poster-1835652-1556212.png',
+					'functional prototype': 'https://cdn-icons-png.flaticon.com/512/60/60473.png',
+				}
+				responsive_logo(
+					style = 'max-width: 100%; max-height: 100%; opacity: .4;',
+					alt = 'Publication icon',
+					title = presentation['type'].capitalize(),
+					src = LOGOS[presentation['type']],
+				)
+				with tags.div(style='display: flex; flex-direction: column; gap: 1px;'):
+					tags.div(presentation['presentation_title'], style='font-weight: bold;')
+					tags.div(presentation['event_name'])
+					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+						tags.span(presentation['date'].strftime(DATES_FORMAT))
+						tags.span(FIELDS_SEPARATOR)
+						if presentation['place'] != '':
+							tags.span(presentation['place'])
+							tags.span(FIELDS_SEPARATOR)
+						else:
+							logging.warning(f'Presentation {repr(presentation["presentation_title"])} does not have a "place", skipping this info for this particular presentation.')
+						tags.span(presentation['modality'].capitalize())
+					if 'url' in presentation:
+						with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+							tags.a(presentation['url'], href=presentation['url'])
 
 if __name__ == '__main__':
 	import sys
@@ -241,7 +293,7 @@ if __name__ == '__main__':
 			generate_education()
 			generate_publications()
 			generate_skills()
+			generate_presentations_in_conferences_and_events()
 
-		
 	with open('../test.html', 'w') as ofile:
 		print(doc, file=ofile)
