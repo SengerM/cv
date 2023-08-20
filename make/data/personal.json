@@ -29,7 +29,7 @@
 	},
 	{
 		"field_name": "Languages",
-		"content": ["🇪🇸 Spanish, native","🇬🇧 English, working proficiency (C1)","🇩🇪 German, basic proficiency (A2-B1)"],
+		"content": ["Spanish, native","English, working proficiency (C1)","German, basic proficiency (A2-B1)"],
 		"icon": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Language_icon.png"
 		}
