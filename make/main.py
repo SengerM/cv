@@ -159,7 +159,7 @@ with doc.head:
 
 with doc:
 	with tags.div(cls='sidenav'):
-		with tags.div(style='margin-bottom: 10px;'):
+		with tags.div(id='my_name_and_header_container'):
 			tags.div('Matias Senger', id='my_name')
 			tags.div('Physicist 🔭 and electronics engineer💡', style='color:#696969;')
 		generate_personal_data()

@@ -1,9 +1,10 @@
 :root {
     --light-background-color: #edf4ff;
+    --light-light-background-color: #f5faff;
     --border-color: #57b1dc;
     --headers-color: #1a1a56;
     --border-radius-for-box: .5em;
-    --transition-time: .5s;
+    --transition-time: 1s;
     --sidebar-width: 380px;
 }
 body {
@@ -29,12 +30,14 @@ h4, h5, h6, h7 {
 	margin-bottom: 22px;
 }
 
+/*
 .highlight_on_hover {
 	transition: var(--transition-time);
 }
 .highlight_on_hover:hover {
-	background-color: var(--light-background-color);
+	background-color: var(--light-light-background-color);
 }
+*/
 
 a {
 	transition-duration: var(--transition-time);
@@ -101,7 +104,9 @@ a:hover {
   margin-left: var(--sidebar-width);
   padding: 10px;
 }
-
+#my_name_and_header_container {
+	margin-bottom: 50px;
+}
 @media screen and (max-width: 1111px) {
 	.sidenav {
 		width: initial;
@@ -113,6 +118,9 @@ a:hover {
 	.main {
 		width: initial;
 		margin-left: initial;
+	}
+	#my_name_and_header_container {
+		margin-bottom: 0px;
 	}
 }
 @media screen and (max-width: 444px) {
