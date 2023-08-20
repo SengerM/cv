@@ -58,7 +58,7 @@ def generate_experience():
 						title = employers_data[employer_key]['name'], 
 						**employers_data[employer_key]['logo'],
 					)
-				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
+				with tags.div(style='display: flex; flex-direction: column; gap: 5px; max-width: 888px;'):
 					tags.div(experience['position_name'], style='font-weight: bolder;')
 					with tags.div():
 						tags.span(employers_data[employer_key]['name'])
