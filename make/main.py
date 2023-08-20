@@ -84,6 +84,11 @@ def generate_experience():
 						tags.span(FIELDS_SEPARATOR)
 						tags.span(experience['modality'])
 					tags.div(experience['description'])
+					if 'responsibilities' in experience:
+						tags.div('Responsibilities:')
+						with tags.ul(style='margin: 0px;'):
+							for responsibility in experience['responsibilities']:
+								tags.li(responsibility)
 
 def generate_education():
 	with open('data/education/education.json') as ifile:
