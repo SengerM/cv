@@ -159,16 +159,15 @@ with doc.head:
 	tags.meta(name='viewport', content='width=device-width, initial-scale=1')
 
 with doc:
-	with tags.div(style='display: flex; flex-direction: row; height: 100%;'):
-		with tags.div():
-			with tags.div(style='rotate: -90deg; transform-origin: center; height: 333px;'):
-				tags.div('Matias Senger', style="font-size: 400%; font-family: 'Source Serif 4', serif; color: var(--headers-color);")
-				tags.div('Physicist 🔭 and electronics engineer💡', style='color:#696969;')
-			generate_personal_data()
-		with tags.div(style='overflow: auto;'):
-			generate_experience()
-			generate_education()
-			generate_publications()
+	with tags.div(cls='sidenav'):
+		with tags.div(style='margin-bottom: 55px;'):
+			tags.div('Matias Senger', style="font-size: 400%; font-family: 'Source Serif 4', serif; color: var(--headers-color);")
+			tags.div('Physicist 🔭 and electronics engineer💡', style='color:#696969;')
+		generate_personal_data()
+	with tags.div(cls='main'):
+		generate_experience()
+		generate_education()
+		generate_publications()
 
 
 	

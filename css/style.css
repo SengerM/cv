@@ -4,19 +4,12 @@
     --headers-color: #1a1a56;
     --border-radius-for-box: .5em;
     --transition-time: .5s;
+    --sidebar-width: 333px;
 }
-
 body {
-/*
-	padding: 10px;
-*/
 	font-family: sans-serif;
 	text-align: justify;
 	font-family: 'Ubuntu', sans-serif;
-/*
-	margin: 0 auto;
-*/
-	height: 95vh;
 }
 h1 {
 	border-bottom: 1px solid var(--border-color);
@@ -28,27 +21,11 @@ h1, h2, h3, h4, h5, h6, h7 {
 h4, h5, h6, h7 {
 	font-size: 100%;
 }
-
-/* --------------- */
 #my_name {
 	font-size: 400%;
 	font-family: 'Source Serif 4', serif;
 	color: var(--headers-color);
 	transition-duration: var(--transition-time);
-}
-#sticky_header {
-	width: 100%;
-	position: sticky;
-	top: -1px;
-	background-color: white;
-	transition-duration: var(--transition-time);
-	z-index: 99;
-}
-#sticky_header.is_pinned {
-	background: linear-gradient(to right, rgba(255,255,255,1) 60%,rgba(255,255,255,0) 100%);
-}
-#sticky_header.is_pinned #my_name {
-	font-size: 350%;
 }
 
 .highlight_on_hover {
@@ -57,7 +34,6 @@ h4, h5, h6, h7 {
 .highlight_on_hover:hover {
 	background-color: var(--light-background-color);
 }
-
 
 a {
 	transition-duration: var(--transition-time);
@@ -106,4 +82,35 @@ a:hover {
 }
 .skill_bubble:hover {
 	background: inherit;
+}
+
+
+.sidenav {
+	height: 100%;
+	width: var(--sidebar-width);
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	overflow-y: auto; /* No scroll */
+	padding: 5px;
+	background-color: var(--light-background-color);
+}
+.main {
+  margin-left: var(--sidebar-width);
+  padding: 10px;
+}
+
+@media screen and (max-width: 1111px) {
+	.sidenav {
+		width: initial;
+		top: initial;
+		left: initial;
+		position: initial;
+		background-color: initial;
+	}
+	.main {
+		width: initial;
+		margin-left: initial;
+	}
 }
