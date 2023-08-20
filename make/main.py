@@ -290,9 +290,9 @@ if __name__ == '__main__':
 			
 		with tags.div(cls='main'):
 			generate_experience()
+			generate_skills()
 			generate_education()
 			generate_publications()
-			generate_skills()
 			generate_presentations_in_conferences_and_events()
 
 	with open('../test.html', 'w') as ofile:
