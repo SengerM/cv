@@ -7,12 +7,16 @@
 }
 
 body {
+/*
 	padding: 10px;
+*/
 	font-family: sans-serif;
 	text-align: justify;
 	font-family: 'Ubuntu', sans-serif;
-	max-width: 888px;
+/*
 	margin: 0 auto;
+*/
+	height: 95vh;
 }
 h1 {
 	border-bottom: 1px solid var(--border-color);
@@ -29,7 +33,6 @@ h4, h5, h6, h7 {
 #my_name {
 	font-size: 400%;
 	font-family: 'Source Serif 4', serif;
-	margin: 22px 0;
 	color: var(--headers-color);
 	transition-duration: var(--transition-time);
 }
@@ -37,7 +40,7 @@ h4, h5, h6, h7 {
 	width: 100%;
 	position: sticky;
 	top: -1px;
-	background-color: inherit;
+	background-color: white;
 	transition-duration: var(--transition-time);
 	z-index: 99;
 }
