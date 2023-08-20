@@ -47,7 +47,7 @@ def generate_experience():
 				cls = 'highlight_on_hover',
 			):
 				employer_key = experience['employer']
-				with tags.div(style='flex-shrink: 0; width: 50px;'):
+				with tags.div(style='flex-shrink: 0; width: 50px;', cls='reduce_logo_in_small_screens'):
 					with tags.a(href=employers_data[employer_key]['website']):
 						tags.img(
 							style = 'width: 100%;',
@@ -93,7 +93,7 @@ def generate_education():
 				cls = 'highlight_on_hover',
 			):
 				school_key = education['school']
-				with tags.div(style='flex-shrink: 0; width: 50px;'):
+				with tags.div(style='flex-shrink: 0; width: 50px;', cls='reduce_logo_in_small_screens'):
 					tags.img(
 						style = 'width: 100%;',
 						alt = schools_data[school_key]['name'], 
@@ -125,7 +125,7 @@ def generate_publications():
 				style = f'display: flex; flex-direction: row; gap: 10px; padding: 10px; border-radius: {BORDER_RADIUS};',
 				cls = 'highlight_on_hover',
 			):
-				with tags.div(style='flex-shrink: 0; height: 3em; opacity: 0.5;'):
+				with tags.div(style='flex-shrink: 0; height: 3em; opacity: 0.5;', cls='reduce_logo_in_small_screens'):
 					tags.img(
 						style = 'max-width: 100%; max-height: 100%;',
 						alt = 'Publication icon',
@@ -160,8 +160,8 @@ with doc.head:
 
 with doc:
 	with tags.div(cls='sidenav'):
-		with tags.div(style='margin-bottom: 55px;'):
-			tags.div('Matias Senger', style="font-size: 400%; font-family: 'Source Serif 4', serif; color: var(--headers-color);")
+		with tags.div(style='margin-bottom: 10px;'):
+			tags.div('Matias Senger', id='my_name')
 			tags.div('Physicist 🔭 and electronics engineer💡', style='color:#696969;')
 		generate_personal_data()
 	with tags.div(cls='main'):

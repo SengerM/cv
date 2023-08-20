@@ -4,7 +4,7 @@
     --headers-color: #1a1a56;
     --border-radius-for-box: .5em;
     --transition-time: .5s;
-    --sidebar-width: 333px;
+    --sidebar-width: 380px;
 }
 body {
 	font-family: sans-serif;
@@ -25,7 +25,8 @@ h4, h5, h6, h7 {
 	font-size: 400%;
 	font-family: 'Source Serif 4', serif;
 	color: var(--headers-color);
-	transition-duration: var(--transition-time);
+	line-height: 0.8;
+	margin-bottom: 22px;
 }
 
 .highlight_on_hover {
@@ -112,5 +113,10 @@ a:hover {
 	.main {
 		width: initial;
 		margin-left: initial;
+	}
+}
+@media screen and (max-width: 444px) {
+	.reduce_logo_in_small_screens {
+		display: none;
 	}
 }
