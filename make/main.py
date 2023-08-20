@@ -300,5 +300,5 @@ if __name__ == '__main__':
 			generate_publications()
 			generate_presentations_in_conferences_and_events()
 
-	with open('../test.html', 'w') as ofile:
+	with open('../cv.html', 'w') as ofile:
 		print(doc, file=ofile)
