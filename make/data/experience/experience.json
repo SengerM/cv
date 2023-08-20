@@ -9,6 +9,15 @@
 		"modality": "On-site"
 	},
 	{
+		"position_name": "Lecture assistant",
+		"employer": "UZH",
+		"start_date": "Jun 2020",
+		"end_date": "present",
+		"description": "Teaching lecture assistant in bachelor and master level courses. Some courses in which I have teached: Modern Physics 2, Experimental Methods in Particle Physics, Physics 2 for Life Sciences, Nuclear and Particle Physics Lab 1.",
+		"work_load": "Part-time",
+		"modality": "On-site"
+	},
+	{
 		"position_name": "Associate scientist",
 		"employer": "CERN",
 		"start_date": "Sep 2022",
@@ -41,6 +50,15 @@
 		"start_date": "Aug 2017",
 		"end_date": "Aug 2018",
 		"description": "Designed, simulated, implemented and tested an innovative geometry for a high precision AC voltage divider for application in metrology. The prototype reached an accuracy of ~99.8% in a range from DC up to 10 kHz. The project was selected for participation at the CPEM 2018 conference, in Paris, which is the most important conference worldwide in the domain of electromagnetic measurements. I was awarded an Early Career Grant for this project.",
+		"work_load": "Part-time",
+		"modality": "On-site"
+	},
+	{
+		"position_name": "Entrepreneur",
+		"employer": "Senger Efectos",
+		"start_date": "Apr 2010",
+		"end_date": "Jun 2020",
+		"description": "Production of electronic equipment for musicians. As an entrepreneur, I was in charge of the complete process from conceptualization of products to retail distribution, including technical design (electronics, mechanics, artwork), production, marketing, etc. I had serial production and in-stock products as well as customized solutions. Products included FX pedals, musical instruments such as electric guitars, amplifiers, etc. I started with this activity during high school and kept it until I moved to Switzerland for my PhD.",
 		"work_load": "Part-time",
 		"modality": "On-site"
 	}
