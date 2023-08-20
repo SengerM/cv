@@ -8,6 +8,10 @@ import humanize
 BORDER_RADIUS = '0.5em'
 LIGHTER_TEXT_COLOR = '#878787'
 
+def responsive_logo(**image_attributes):
+	with tags.div(style='flex-shrink: 0; width: 50px;', cls='responsive_logo'):
+		tags.img(width='100%',**image_attributes)
+
 def generate_personal_data():
 	with open('data/personal.json') as ifile:
 		personal_data = json.load(ifile)
@@ -47,14 +51,12 @@ def generate_experience():
 				cls = 'highlight_on_hover',
 			):
 				employer_key = experience['employer']
-				with tags.div(style='flex-shrink: 0; width: 50px;', cls='reduce_logo_in_small_screens'):
-					with tags.a(href=employers_data[employer_key]['website']):
-						tags.img(
-							style = 'width: 100%;',
-							alt = employers_data[employer_key]['name'], 
-							title = employers_data[employer_key]['name'], 
-							**employers_data[employer_key]['logo'],
-						)
+				with tags.a(href=employers_data[employer_key]['website']):
+					responsive_logo(
+						alt = employers_data[employer_key]['name'], 
+						title = employers_data[employer_key]['name'], 
+						**employers_data[employer_key]['logo'],
+					)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
 					tags.div(experience['position_name'], style='font-weight: bolder;')
 					with tags.div():
@@ -93,13 +95,11 @@ def generate_education():
 				cls = 'highlight_on_hover',
 			):
 				school_key = education['school']
-				with tags.div(style='flex-shrink: 0; width: 50px;', cls='reduce_logo_in_small_screens'):
-					tags.img(
-						style = 'width: 100%;',
-						alt = schools_data[school_key]['name'], 
-						title = schools_data[school_key]['name'], 
-						**schools_data[school_key]['logo'],
-					)
+				responsive_logo(
+					alt = schools_data[school_key]['name'], 
+					title = schools_data[school_key]['name'], 
+					**schools_data[school_key]['logo'],
+				)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
 					tags.div(schools_data[school_key]['name'], style='font-weight: bolder;')
 					with tags.div():
@@ -125,12 +125,11 @@ def generate_publications():
 				style = f'display: flex; flex-direction: row; gap: 10px; padding: 10px; border-radius: {BORDER_RADIUS};',
 				cls = 'highlight_on_hover',
 			):
-				with tags.div(style='flex-shrink: 0; height: 3em; opacity: 0.5;', cls='reduce_logo_in_small_screens'):
-					tags.img(
-						style = 'max-width: 100%; max-height: 100%;',
-						alt = 'Publication icon',
-						src = 'https://static.thenounproject.com/png/1143700-200.png',
-					)
+				responsive_logo(
+					style = 'max-width: 100%; max-height: 100%;',
+					alt = 'Publication icon',
+					src = 'https://static.thenounproject.com/png/1143700-200.png',
+				)
 				with tags.div(style='display: flex; flex-direction: column; gap: 1px;'):
 					tags.div(publication['title'], style='font-weight: bold;')
 					with tags.div():

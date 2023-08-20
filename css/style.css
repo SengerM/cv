@@ -116,7 +116,7 @@ a:hover {
 	}
 }
 @media screen and (max-width: 444px) {
-	.reduce_logo_in_small_screens {
+	.responsive_logo {
 		display: none;
 	}
 }
