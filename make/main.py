@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 import datetime
 import humanize
+import pandas
 
 BORDER_RADIUS = '0.5em'
 LIGHTER_TEXT_COLOR = '#878787'
@@ -147,6 +148,32 @@ def generate_publications():
 		tags.a('iNSPIRE', cls='button', href='https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=find%20a%20matias%20senger')
 		tags.a('arXiv', cls='button', href='https://arxiv.org/search/?query=matias+senger&searchtype=author&abstracts=show&order=-announced_date_first&size=50')
 
+def generate_skills():
+	skills_data = pandas.read_csv(
+		'data/skills.csv',
+		dtype = {
+			'skill_name': str,
+			'sub_skill_of': str,
+			'kind': str,
+			'category': str,
+			'Skillfulness (1-10)': int,
+			'description': str,
+		}
+	)
+	
+	tags.h1('Skills')
+	with tags.div(style='display: flex; flex-direction: column; gap: 22px;'):
+		for category in ['programming languages','software tools','software apps','operating systems']:
+			with tags.div(style='display: flex; flex-direction: row;'):
+				tags.div(category.capitalize(), style='width: 166px; flex-shrink: 0;')
+				with tags.div(style='display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap;'):
+					for _,skill in skills_data.query(f'kind=="hard" and category=={repr(category)}').sort_values("Skillfulness (1-10)", ascending=False).iterrows():
+						tags.div(
+							skill['skill_name'] + ((' '+'⭐'*int(skill['Skillfulness (1-10)']/3)) if skill['Skillfulness (1-10)']>=6 else ''), 
+							cls = 'skill_bubble',
+							title = skill['description'] if not isinstance(skill['description'], float) else None,
+						)
+
 doc = dominate.document(title='Matias Senger curriculum vitae')
 
 with doc.head:
@@ -167,7 +194,7 @@ with doc:
 		generate_experience()
 		generate_education()
 		generate_publications()
-
+		generate_skills()
 
 	
 with open('../test.html', 'w') as ofile:
