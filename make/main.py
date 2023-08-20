@@ -149,6 +149,14 @@ def generate_publications():
 		tags.a('arXiv', cls='button', href='https://arxiv.org/search/?query=matias+senger&searchtype=author&abstracts=show&order=-announced_date_first&size=50')
 
 def generate_skills():
+	def generate_skill_bubble(skill):
+		n_stars = 2 if skill['Skillfulness (1-10)']>=9 else 1 if skill['Skillfulness (1-10)']>=6 else 0
+		tags.div(
+			skill['skill_name'] + (' '+'⭐'*n_stars)*(n_stars>0),
+			cls = 'skill_bubble',
+			title = skill['description'] if not isinstance(skill['description'], float) else None,
+		)
+	
 	skills_data = pandas.read_csv(
 		'data/skills.csv',
 		dtype = {
@@ -158,21 +166,23 @@ def generate_skills():
 			'category': str,
 			'Skillfulness (1-10)': int,
 			'description': str,
+			'url': str,
 		}
 	)
 	
 	tags.h1('Skills')
-	with tags.div(style='display: flex; flex-direction: column; gap: 22px;'):
-		for category in ['programming languages','software tools','software apps','operating systems']:
-			with tags.div(style='display: flex; flex-direction: row;'):
-				tags.div(category.capitalize(), style='width: 166px; flex-shrink: 0;')
-				with tags.div(style='display: flex; flex-direction: row; gap: 5px; flex-wrap: wrap;'):
+	with tags.div(style='display: flex; flex-direction: row; gap: 22px; row-gap: 22px; flex-wrap: wrap'):
+		for category in ['programming languages','software tools','software apps','analytics','electronics','hardware design','operating systems']:
+			with tags.div(style='display: flex; flex-direction: column; width: 333px; max-width: 100%; gap: 10px;'):
+				tags.div(category.capitalize(), style='flex-shrink: 0; font-weight: bold;')
+				with tags.div(style='display: flex; flex-direction: row; gap: 11px; flex-wrap: wrap;'):
 					for _,skill in skills_data.query(f'kind=="hard" and category=={repr(category)}').sort_values("Skillfulness (1-10)", ascending=False).iterrows():
-						tags.div(
-							skill['skill_name'] + ((' '+'⭐'*int(skill['Skillfulness (1-10)']/3)) if skill['Skillfulness (1-10)']>=6 else ''), 
-							cls = 'skill_bubble',
-							title = skill['description'] if not isinstance(skill['description'], float) else None,
-						)
+						if isinstance(skill['url'], str):
+							with tags.a(href=skill['url'], target='_blank', style='color: inherit; text-decoration: none !important;'):
+								generate_skill_bubble(skill)
+						else:
+							generate_skill_bubble(skill)
+						
 
 doc = dominate.document(title='Matias Senger curriculum vitae')
 

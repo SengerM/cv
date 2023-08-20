@@ -83,6 +83,7 @@ a:hover {
 	border-radius: var(--border-radius-for-box);
 	transition-duration: var(--transition-time);
 	user-select: none;
+	flex-shrink: 0;
 }
 .skill_bubble:hover {
 	background: inherit;
