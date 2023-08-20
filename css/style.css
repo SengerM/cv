@@ -111,6 +111,6 @@ a:hover {
 }
 @media screen and (max-width: 444px) {
 	.responsive_logo {
-		display: none;
+		width: 22px !important;
 	}
 }
