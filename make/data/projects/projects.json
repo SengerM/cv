@@ -1,0 +1,67 @@
+[
+	{
+		"internal_name": "robocold beta setup",
+		"public_name": "Laboratory setup for automated pixel testing",
+		"description": "Fully automated setup capable of autonomous operation for periods lasting typically one week. Remote controlled and monitored via the Internet. It saved me countless hours of repetitive work, and allowed my institution to greatly increase the amount of results, comparable to institutions with more personnel.",
+		"date": "Aug 2022",
+		"development_time": "3 months",
+		"url": "https://msenger.web.cern.ch/the-robocold-beta-setup/",
+		"media": [
+			{
+				"media_type": "image",
+				"src": "https://msenger.web.cern.ch/wp-content/uploads/2022/08/robocold_setup_parts.svg",
+				"title": "A picture of the setup and its components"
+			},
+			{
+				"media_type": "image",
+				"src": "https://msenger.web.cern.ch/wp-content/uploads/2022/08/robocold_setup_blocks-1.svg",
+				"title": "A schematic diagram of the setup"
+			},
+			{
+				"media_type": "image",
+				"src": "https://msenger.web.cern.ch/wp-content/uploads/2022/08/photo_2022-08-22_13-45-24.jpg",
+				"title": "Picture of the robotic system developed"
+			},
+			{
+				"media_type": "video",
+				"src": "https://msenger.web.cern.ch/wp-content/uploads/2022/08/video_2022-08-22_13-27-09.mp4",
+				"title": "Video of the robotic system"
+			}
+		]
+	},
+	{
+		"internal_name": "Chubut 2",
+		"public_name": "Readout board for pixel detectors",
+		"description": "An analog readout board specifically intended for ultra fast pixels, containing multiple independent channels with 1 GHz wide band, 40 dB amplifiers. Two versions were produced with 4 and 16 channels respectively. Importance was given to produce a board easy to use and practical in the lab, which included a design with a main and a carrier board. It became very popular among researchers from different institutions across Europe and very soon many people was using it for their own tests.",
+		"date": "May 2023",
+		"development_time": "6 months",
+		"url": "https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/main.html",
+		"media": [
+			{
+				"media_type": "image",
+				"src": "https://sengerm.github.io/Chubut_2/doc/testing/media/pogos_detail/1.svg",
+				"title": "A 3D view of the 4 channels version"
+			},
+			{
+				"media_type": "image",
+				"src": "https://sengerm.github.io/Chubut_2/doc/testing/media/chubut_2_photos/4.jpg",
+				"title": "Picture of the 4 channels version"
+			},
+			{
+				"media_type": "image",
+				"src": "https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/media/pics/photo_2023-08-13_12-18-40.jpg",
+				"title": "Picture of the 16 channels version"
+			},
+			{
+				"media_type": "image",
+				"src": "https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/media/pics/photo_2023-08-16_14-18-55.jpg",
+				"title": "Picture of the 16 channels version, main board only"
+			},
+			{
+				"media_type": "image",
+				"src": "https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/media/IR/IR_2187.jpg",
+				"title": "Thermal picture of the board to determine the thermal impact of using it"
+			}
+		]
+	}
+]

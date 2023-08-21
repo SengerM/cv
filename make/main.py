@@ -249,6 +249,28 @@ def generate_presentations_in_conferences_and_events():
 						with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 							tags.a(presentation['url'], href=presentation['url'])
 
+def generate_projects():
+	with open('data/projects/projects.json') as ifile:
+		projects_data = json.load(ifile)
+	
+	tags.h1('Projects')
+	
+	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
+		for project in projects_data:
+			with tags.div(style='display: flex; flex-direction: column; max-width: 100%; width: 444px; gap: 10px;'):
+				with tags.div(style='display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; border-radius: 1em; height: 222px; overflow: hidden;'):
+					for image in project['media'][0:1]:
+						if image['media_type'] != 'image':
+							continue
+						tags.img(src=image['src'], alt=image['title'], title=image['title'], width='100%', style='border-radius: 1em;')
+				tags.div(project['public_name'], style='font-weight: bold;')
+				with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+					project_date = datetime.datetime.strptime(project['date'], '%b %Y')
+					tags.span(project_date.strftime(DATES_FORMAT))
+					tags.span(FIELDS_SEPARATOR)
+					tags.span(f'Development time {project["development_time"]}')
+				tags.a(f'Know more', href=project['url'])
+
 if __name__ == '__main__':
 	import sys
 	
@@ -295,10 +317,11 @@ if __name__ == '__main__':
 			
 		with tags.div(cls='main'):
 			generate_experience()
+			generate_projects()
 			generate_skills()
 			generate_education()
 			generate_publications()
 			generate_presentations_in_conferences_and_events()
-
+			
 	with open('../cv.html', 'w') as ofile:
 		print(doc, file=ofile)
