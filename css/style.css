@@ -88,7 +88,7 @@ a:hover {
 }
 .main {
   margin-left: var(--sidebar-width);
-  padding: 10px;
+  padding: 20px;
 }
 #my_name_and_header_container {
 	margin-bottom: 50px;
@@ -104,6 +104,7 @@ a:hover {
 	.main {
 		width: initial;
 		margin-left: initial;
+		padding: 0px;
 	}
 	#my_name_and_header_container {
 		margin-bottom: 0px;
