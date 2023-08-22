@@ -63,5 +63,30 @@
 				"title": "Thermal picture of the board to determine the thermal impact of using it"
 			}
 		]
+	},
+	{
+		"internal_name": "TP redes neuronales",
+		"public_name": "Audio processing with neural networks",
+		"description": "Implemented from scratch a multilayer perceptron neural network and trained it to emulate guitar FX pedals. This was the final project of a course on neural networks I took during my undergraduate studies. Coding it from scratch was part of the challenge, to demonstrate that I properly understood all the concepts.",
+		"date": "Jan 2016",
+		"development_time": "2 months",
+		"url": "https://github.com/SengerM/TP4_redes_neuronales_FIUBA/blob/main/informe/TP4_redes_neuronales.pdf",
+		"media": [
+			{
+				"media_type": "image",
+				"src": "https://raw.githubusercontent.com/SengerM/TP4_redes_neuronales_FIUBA/66a78021ec4695365582e241b4e42c79cfa63e87/informe/arquitectura_procesamiento.svg",
+				"title": "Block diagram of the implemented system"
+			},
+			{
+				"media_type": "image",
+				"src": "https://raw.githubusercontent.com/SengerM/TP4_redes_neuronales_FIUBA/66a78021ec4695365582e241b4e42c79cfa63e87/informe/perceptron.svg",
+				"title": "An example of a neural network graphic representation"
+			},
+			{
+				"media_type": "image",
+				"src": "https://raw.githubusercontent.com/SengerM/TP4_redes_neuronales_FIUBA/66a78021ec4695365582e241b4e42c79cfa63e87/informe/2016%253a02%253a02%253a16%253a35%253a58_dominio_del_tiempo.svg",
+				"title": "A fragment of audio reconstructed by the neural network compared with the expected output"
+			}
+		]
 	}
 ]
