@@ -2,7 +2,7 @@
 	{
 		"internal_name": "robocold beta setup",
 		"public_name": "Laboratory setup for automated pixel testing",
-		"description": "Fully automated setup capable of autonomous operation for periods lasting typically one week. Remote controlled and monitored via the Internet. It saved me countless hours of repetitive work, and allowed my institution to greatly increase the amount of results, comparable to institutions with more personnel.",
+		"description": "Fully automated setup capable of autonomous operation for periods lasting typically one week. Remote controlled and monitored via the Internet. It saved me countless hours of repetitive work, and allowed my institution to greatly increase the amount of results, comparable to institutions with more personnel. I was in charge of the design, the implementation and the commissioning. ",
 		"date": "Aug 2022",
 		"development_time": "3 months",
 		"url": "https://msenger.web.cern.ch/the-robocold-beta-setup/",
@@ -31,8 +31,8 @@
 	},
 	{
 		"internal_name": "Chubut 2",
-		"public_name": "Readout board for pixel detectors",
-		"description": "An analog readout board specifically intended for ultra fast pixels, containing multiple independent channels with 1 GHz wide band, 40 dB amplifiers. Two versions were produced with 4 and 16 channels respectively. Importance was given to produce a board easy to use and practical in the lab, which included a design with a main and a carrier board. It became very popular among researchers from different institutions across Europe and very soon many people was using it for their own tests.",
+		"public_name": "Readout board for pixel sensors",
+		"description": "An analog readout board specifically intended for ultra fast pixels, containing multiple independent channels with 1 GHz wide band, 40 dB amplifiers. Two versions were produced with 4 and 16 channels respectively. Importance was given to produce a system easy to use and practical in the lab, which included a design with a main and a carrier boards. This turned out saving a lot of time and costs, since each pixel sensor can be mounted in a low cost, disposable board, while the main board is effortless reused. It became very popular among researchers from different institutions across Europe and very soon many people was using it for their own tests.",
 		"date": "May 2023",
 		"development_time": "6 months",
 		"url": "https://sengerm.github.io/Chubut_2_16CH/doc/230810_characterization/main.html",
