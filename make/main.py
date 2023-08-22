@@ -257,7 +257,7 @@ def generate_projects():
 	
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
 		for project in projects_data:
-			with tags.div(style='display: flex; flex-direction: column; max-width: 100%; width: 444px; gap: 10px;'):
+			with tags.div(style='display: flex; flex-direction: column; max-width: 100%; width: 45%; min-width: 333px; gap: 10px;'):
 				with tags.div(style='display: flex; flex-direction: row; flex-wrap: wrap; gap: 5px; border-radius: 1em; height: 222px; overflow: hidden;'):
 					for image in project['media'][0:1]:
 						if image['media_type'] != 'image':
@@ -269,6 +269,7 @@ def generate_projects():
 					tags.span(project_date.strftime(DATES_FORMAT))
 					tags.span(FIELDS_SEPARATOR)
 					tags.span(f'Development time {project["development_time"]}')
+				tags.div(project['description'])
 				tags.a(f'Know more', href=project['url'])
 
 if __name__ == '__main__':
@@ -292,7 +293,7 @@ if __name__ == '__main__':
 		tags.meta(name='viewport', content='width=device-width, initial-scale=1')
 		tags.base(target="_blank") # All links open in new tab.
 
-	with doc:
+	with doc.body:
 		with tags.div(cls='sidenav'):
 			with tags.div(id='my_name_and_header_container'):
 				tags.div('Matias Senger', id='my_name')
