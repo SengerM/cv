@@ -1,0 +1,50 @@
+[
+	{
+		"internal_name": "cpython_argparse_help",
+		"project_name": "cpython",
+		"project_url": "https://github.com/python/cpython",
+		"description": "Bug fix and feature enhancement for help messages in the argparse module of Python.",
+		"my_contribution_url": "https://github.com/python/cpython/pull/27923",
+		"status": "open",
+		"languages_used": ["python"],
+		"project_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+	},
+	{
+		"internal_name": "scipy_landau",
+		"project_name": "SciPy",
+		"project_url": "https://github.com/scipy/scipy",
+		"description": "Landau probability distribution, approximately 1500 times faster than the previous, more general, Lévy stable distribution.",
+		"my_contribution_url": "https://github.com/scipy/scipy/pull/19145",
+		"status": "open",
+		"languages_used": ["python"],
+		"project_logo": "https://scipy.org/images/logo.svg"
+	},
+	{
+		"internal_name": "gdsCAD_installation_breaking_patch",
+		"project_name": "gdsCAD",
+		"project_url": "https://github.com/hohlraum/gdsCAD",
+		"description": "Patch to fix package instsallation.",
+		"my_contribution_url": "https://github.com/hohlraum/gdsCAD/pull/69",
+		"status": "open",
+		"languages_used": ["python"]
+	},
+	{
+		"internal_name": "minimalmodbus_nonstandard_address",
+		"project_name": "MinimalModbus",
+		"project_url": "https://github.com/pyhys/minimalmodbus",
+		"description": "Patch for compatibility with non standard equipment using the modbus protocol.",
+		"my_contribution_url": "https://github.com/pyhys/minimalmodbus/pull/82",
+		"status": "open",
+		"languages_used": ["python"]
+	},
+	{
+		"internal_name": "lantz_project",
+		"project_name": "Lantz",
+		"project_url": "https://github.com/lantzproject",
+		"description": "Submitted usage example.",
+		"my_contribution_url": "https://github.com/lantzproject/examples/pull/1",
+		"status": "merged",
+		"languages_used": ["python"],
+		"project_logo": "https://avatars.githubusercontent.com/u/37600627?s=200&v=4"
+	}
+]

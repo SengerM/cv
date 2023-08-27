@@ -272,6 +272,53 @@ def generate_projects():
 				tags.div(project['description'])
 				tags.a(f'Know more', href=project['url'])
 
+def generate_contributions_to_open_source_projects():
+	with open('data/contributions_to_open_source_projects.json') as ifile:
+		contributions_data = json.load(ifile)
+	
+	tags.h1('Contributions to open source projects')
+	
+	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
+		for contribution in contributions_data:
+			with tags.div(style='display: flex; flex-direction: row; max-width: 100%; width: 45%; min-width: 333px; gap: 10px;'):
+				with tags.a(href=contribution['project_url']):
+					if 'project_logo' in contribution:
+						responsive_logo(
+							style = 'max-width: 100%; max-height: 100%;',
+							alt = f'{contribution["project_name"]} logo',
+							title = contribution["project_name"],
+							src = contribution['project_logo'],
+						)
+					else:
+						responsive_logo(
+							style = 'max-width: 100%; max-height: 100%; opacity: 50%;',
+							alt = 'Open source logo',
+							title = 'Open source logo',
+							src = 'https://cdn-icons-png.flaticon.com/512/888/888868.png',
+						)
+				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
+					with tags.div(style='display: flex; flex-direction: row; gap: 5px;'):
+						tags.div(contribution['project_name'], style='font-weight: bold;')
+						tags.div(FIELDS_SEPARATOR, style=f'color: {LIGHTER_TEXT_COLOR};')
+						with tags.div(style='display: flex; flex-direction: row; gap: 5px;'):
+							STATUS_IMAGES = {
+								'open': dict(
+									src = 'https://static-00.iconduck.com/assets.00/git-pull-request-icon-486x512-6ypq0sng.png',
+									style = 'width: 1em; height: 1em; filter: brightness(0.9) invert(.7) sepia(.5) hue-rotate(100deg) saturate(200%);',
+								),
+								'merged': dict(
+									src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Octicons-git-merge.svg/1536px-Octicons-git-merge.svg.png',
+									style = 'width: 1em; height: 1.3em; filter: brightness(0.9) invert(.7);',
+								)
+							}
+							tags.img(**STATUS_IMAGES[contribution['status']])
+							if contribution['status'] == 'open':
+								tags.span('Open', style='color: #59d467;')
+							elif contribution['status'] == 'merged':
+								tags.span('Merged', style='color: #b5b5b5;')
+					tags.div(contribution['description'])
+					tags.a(contribution['my_contribution_url'], href=contribution['my_contribution_url'])
+
 if __name__ == '__main__':
 	import sys
 	
@@ -319,6 +366,7 @@ if __name__ == '__main__':
 		with tags.div(cls='main'):
 			generate_experience()
 			generate_projects()
+			generate_contributions_to_open_source_projects()
 			generate_skills()
 			generate_education()
 			generate_publications()
