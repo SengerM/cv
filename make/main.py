@@ -47,7 +47,7 @@ def generate_experience():
 	with open('data/experience/employers.json') as ifile:
 		employers_data = json.load(ifile)
 	
-	tags.h1('Experience')
+	tags.h1('Experience', id='section_experience')
 	with tags.div(style='display: flex; flex-direction: column;'):
 		for experience in experience_data:
 			with tags.div(
@@ -96,7 +96,7 @@ def generate_education():
 	with open('data/education/schools.json') as ifile:
 		schools_data = json.load(ifile)
 	
-	tags.h1('Education')
+	tags.h1('Education', id='section_education')
 	with tags.div(style='display: flex; flex-direction: column;'):
 		for education in education_data:
 			with tags.div(
@@ -123,7 +123,7 @@ def generate_publications():
 	with open('data/publications.json') as ifile:
 		publications_data = json.load(ifile)
 	
-	tags.h1('Publications')
+	tags.h1('Publications', id='section_publications')
 	tags.p('Publications with main participation:')
 	
 	with tags.div(style='display: flex; flex-direction: column;'):
@@ -185,7 +185,7 @@ def generate_skills():
 		}
 	)
 	
-	tags.h1('Skills')
+	tags.h1('Skills', id='section_skills')
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; row-gap: 22px; flex-wrap: wrap'):
 		for category in ['programming languages','software tools','software apps','analytics','electronics','hardware design','operating systems']:
 			with tags.div(style='display: flex; flex-direction: column; width: 333px; max-width: 100%; gap: 10px;'):
@@ -214,7 +214,7 @@ def generate_presentations_in_conferences_and_events():
 		keep_default_na = False,
 	)
 	
-	tags.h1('Presentations in international conferences and events')
+	tags.h1('Presentations in international conferences and events', id='section_conferences')
 	with tags.div(style='display: flex; flex-direction: column;'):
 		for _,presentation in presentations_data.sort_values('date', ascending=False).iterrows():
 			with tags.div(
@@ -253,7 +253,7 @@ def generate_projects():
 	with open('data/projects/projects.json') as ifile:
 		projects_data = json.load(ifile)
 	
-	tags.h1('Projects')
+	tags.h1('Projects', id='section_projects')
 	
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
 		for project in projects_data:
@@ -276,7 +276,7 @@ def generate_contributions_to_open_source_projects():
 	with open('data/contributions_to_open_source_projects.json') as ifile:
 		contributions_data = json.load(ifile)
 	
-	tags.h1('Contributions to open source projects')
+	tags.h1('Contributions to open source projects', id='section_open_source_projects')
 	
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
 		for contribution in contributions_data:
