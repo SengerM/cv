@@ -19,17 +19,17 @@ def responsive_logo(**image_attributes):
 def generate_personal_data():
 	with open('data/personal.json') as ifile:
 		personal_data = json.load(ifile)
-	with tags.div(style='display: flex; flex-direction: column;'):
+	with tags.div(style='display: flex; flex-direction: column; margin-top: 22px;'):
 		for data in personal_data:
 			with tags.div(
 				style = f'display: flex; flex-direction: row; gap: 10px; padding: 10px; border-radius: {BORDER_RADIUS};',
 				cls = 'highlight_on_hover'
 			):
-				with tags.div(style='flex-shrink: 0; width: 20px;'):
+				with tags.div(style='flex-shrink: 0; width: 25px;'):
 					tags.img(
-						style = 'width: 100%;',
-						alt = data['field_name'], 
-						title = data['field_name'], 
+						style = 'width: 100%; opacity: .7;',
+						alt = data['field_name'],
+						title = data['field_name'],
 						**data['icon'],
 					)
 				with tags.div(style='display: flex; flex-direction: column;'):
