@@ -281,21 +281,20 @@ def generate_contributions_to_open_source_projects():
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
 		for contribution in contributions_data:
 			with tags.div(style='display: flex; flex-direction: row; max-width: 100%; width: 45%; min-width: 333px; gap: 10px;'):
-				with tags.a(href=contribution['project_url']):
-					if 'project_logo' in contribution:
-						responsive_logo(
-							style = 'max-width: 100%; max-height: 100%;',
-							alt = f'{contribution["project_name"]} logo',
-							title = contribution["project_name"],
-							src = contribution['project_logo'],
-						)
-					else:
-						responsive_logo(
-							style = 'max-width: 100%; max-height: 100%; opacity: 50%;',
-							alt = 'Open source logo',
-							title = 'Open source logo',
-							src = 'https://cdn-icons-png.flaticon.com/512/888/888868.png',
-						)
+				if 'project_logo' in contribution:
+					responsive_logo(
+						style = 'max-width: 100%; max-height: 100%;',
+						alt = f'{contribution["project_name"]} logo',
+						title = contribution["project_name"],
+						src = contribution['project_logo'],
+					)
+				else:
+					responsive_logo(
+						style = 'max-width: 100%; max-height: 100%; opacity: 50%;',
+						alt = 'Open source logo',
+						title = 'Open source logo',
+						src = 'https://cdn-icons-png.flaticon.com/512/888/888868.png',
+					)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
 					with tags.div(style='display: flex; flex-direction: row; gap: 5px;'):
 						tags.div(contribution['project_name'], style='font-weight: bold;')
