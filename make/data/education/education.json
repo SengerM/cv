@@ -6,15 +6,21 @@
 		"end_date": "Jun 2024"
 	},
 	{
-		"degree_level": "Master's",
+		"degree_level": "Master of Science",
 		"field": "Physical sciences",
 		"school": "UBA",
-		"end_date": "Dec 2019"
+		"end_date": "Dec 2019",
+		"thesis": {
+			"title": "Fundamentals of Dark Matter Search with Non Linear Optics"
+		}
 	},
 	{
-		"degree_level": "Master's",
+		"degree_level": "Master of Engineering",
 		"field": "Electronics engineering",
 		"school": "UBA",
-		"end_date": "Sep 2018"
+		"end_date": "Sep 2018",
+		"thesis": {
+			"title": "Development of a System for Characterization of Metal-Organic Junctions"
+		}
 	}
 ]

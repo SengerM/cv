@@ -90,7 +90,7 @@ def generate_experience():
 							for responsibility in experience['responsibilities']:
 								tags.li(responsibility)
 
-def generate_education():
+def generate_education(include_logos:bool=True):
 	with open('data/education/education.json') as ifile:
 		education_data = json.load(ifile)
 	with open('data/education/schools.json') as ifile:
@@ -104,11 +104,12 @@ def generate_education():
 				cls = 'highlight_on_hover',
 			):
 				school_key = education['school']
-				responsive_logo(
-					alt = schools_data[school_key]['name'], 
-					title = schools_data[school_key]['name'], 
-					**schools_data[school_key]['logo'],
-				)
+				if include_logos == True:
+					responsive_logo(
+						alt = schools_data[school_key]['name'], 
+						title = schools_data[school_key]['name'], 
+						**schools_data[school_key]['logo'],
+					)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
 					tags.div(schools_data[school_key]['name'], style='font-weight: bolder;')
 					with tags.div():
@@ -118,6 +119,9 @@ def generate_education():
 					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
 						end_date = datetime.datetime.strptime(education['end_date'], '%b %Y')
 						tags.span(end_date.strftime(DATES_FORMAT) if end_date.date()!=datetime.datetime.today().date() else 'Present')
+					if 'thesis' in education:
+						with tags.div():
+							tags.span('Thesis: ' + education['thesis']['title'])
 
 def generate_publications():
 	with open('data/publications.json') as ifile:
@@ -272,7 +276,7 @@ def generate_projects():
 				tags.div(project['description'])
 				tags.a(f'Know more', href=project['url'])
 
-def generate_contributions_to_open_source_projects():
+def generate_contributions_to_open_source_projects(include_logos:bool=False):
 	with open('data/contributions_to_open_source_projects.json') as ifile:
 		contributions_data = json.load(ifile)
 	
@@ -281,20 +285,21 @@ def generate_contributions_to_open_source_projects():
 	with tags.div(style='display: flex; flex-direction: row; gap: 22px; flex-wrap: wrap;'):
 		for contribution in contributions_data:
 			with tags.div(style='display: flex; flex-direction: row; max-width: 100%; width: 45%; min-width: 333px; gap: 10px;'):
-				if 'project_logo' in contribution:
-					responsive_logo(
-						style = 'max-width: 100%; max-height: 100%;',
-						alt = f'{contribution["project_name"]} logo',
-						title = contribution["project_name"],
-						src = contribution['project_logo'],
-					)
-				else:
-					responsive_logo(
-						style = 'max-width: 100%; max-height: 100%; opacity: 50%;',
-						alt = 'Open source logo',
-						title = 'Open source logo',
-						src = 'https://cdn-icons-png.flaticon.com/512/888/888868.png',
-					)
+				if include_logos == True:
+					if 'project_logo' in contribution:
+						responsive_logo(
+							style = 'max-width: 100%; max-height: 100%;',
+							alt = f'{contribution["project_name"]} logo',
+							title = contribution["project_name"],
+							src = contribution['project_logo'],
+						)
+					else:
+						responsive_logo(
+							style = 'max-width: 100%; max-height: 100%; opacity: 50%;',
+							alt = 'Open source logo',
+							title = 'Open source logo',
+							src = 'https://cdn-icons-png.flaticon.com/512/888/888868.png',
+						)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
 					with tags.div(style='display: flex; flex-direction: row; gap: 5px;'):
 						tags.div(contribution['project_name'], style='font-weight: bold;')
