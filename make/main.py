@@ -111,14 +111,16 @@ def generate_education(include_logos:bool=True):
 						**schools_data[school_key]['logo'],
 					)
 				with tags.div(style='display: flex; flex-direction: column; gap: 5px;'):
-					tags.div(schools_data[school_key]['name'], style='font-weight: bolder;')
+					with tags.div():
+						tags.span(schools_data[school_key]['name'], style='font-weight: bolder;')
+						with tags.span(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+							tags.span(FIELDS_SEPARATOR)
+							end_date = datetime.datetime.strptime(education['end_date'], '%b %Y')
+							tags.span(end_date.strftime(DATES_FORMAT) if end_date.date()!=datetime.datetime.today().date() else 'Present')
 					with tags.div():
 						tags.span(education['degree_level'])
 						tags.span(FIELDS_SEPARATOR)
 						tags.span(education['field'])
-					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
-						end_date = datetime.datetime.strptime(education['end_date'], '%b %Y')
-						tags.span(end_date.strftime(DATES_FORMAT) if end_date.date()!=datetime.datetime.today().date() else 'Present')
 					if 'thesis' in education:
 						with tags.div():
 							tags.span('Thesis: ' + education['thesis']['title'])

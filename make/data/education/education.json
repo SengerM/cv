@@ -1,9 +1,12 @@
 [
 	{
 		"degree_level": "PhD",
-		"field": "Physical sciences",
+		"field": "Particle physics and engineering",
 		"school": "UZH",
-		"end_date": "Jun 2024"
+		"end_date": "Jun 2024",
+		"thesis": {
+			"title": "4D pixel sensor technologies and readout ASIC prototypes"
+		}
 	},
 	{
 		"degree_level": "Master of Science",
@@ -22,5 +25,17 @@
 		"thesis": {
 			"title": "Development of a System for Characterization of Metal-Organic Junctions"
 		}
+	},
+	{
+		"degree_level": "Bachelor of Physics",
+		"field": "Physical sciences",
+		"school": "UBA",
+		"end_date": "Sep 2016"
+	},
+	{
+		"degree_level": "Bachelor of Engineering",
+		"field": "Electronics engineering",
+		"school": "UBA",
+		"end_date": "Sep 2015"
 	}
 ]
