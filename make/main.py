@@ -350,7 +350,6 @@ if __name__ == '__main__':
 		with tags.div(cls='sidenav'):
 			with tags.div(id='my_name_and_header_container'):
 				tags.div('Matias Senger', id='my_name')
-				tags.div('Physicist 🔭 and electronics engineer💡', style='color:#696969;')
 			generate_personal_data()
 			
 			with tags.div(style='display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; margin-top: 33px;'):
