@@ -67,9 +67,9 @@
 	{
 		"internal_name": "TP redes neuronales",
 		"public_name": "Audio processing with neural networks",
-		"description": "Implemented from scratch a multilayer perceptron neural network and trained it to emulate guitar FX pedals. This was the final project of a course on neural networks I took during my undergraduate studies. Coding it from scratch was part of the challenge, to demonstrate that I properly understood all the concepts.",
+		"description": "Implemented a multilayer perceptron neural network from scratch and trained it to emulate guitar FX pedals. This was my final project of a course on neural networks I took during my undergraduate studies. Coding the neural network first principles was part of the challenge, to demonstrate that I properly understood all the concepts.",
 		"date": "Jan 2016",
-		"development_time": "2 months",
+		"development_time": "1 months",
 		"url": "https://github.com/SengerM/TP4_redes_neuronales_FIUBA/blob/main/informe/TP4_redes_neuronales.pdf",
 		"media": [
 			{

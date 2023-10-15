@@ -14,20 +14,6 @@
 		}
 	},
 	{
-		"field_name": "Website",
-		"content": ["https://msenger.web.cern.ch"],
-		"icon": {
-			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg"
-		}
-	},
-	{
-		"field_name": "LinkedIn",
-		"content": ["https://www.linkedin.com/in/msenger"],
-		"icon": {
-			"src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAB10lEQVRYR+2YgU3DMBBF2wlgA8oGMAFlAmACygTABJQJgAkIG8AElAmACSgTABPAf1IjueYcClbslPokq7Wd5J5/zmfH/d4SWn8JmXsFOtVb+3dKD6TcRir1DD+vapta/kNKA/yosp4R+l2+ty3wEPRQF99nBK5dH+lP5XN0HfpcwOOVhH52Rj7S/72WQyhaaYC3PMhL1Y9bBI+GPhDcrQdIlnnpMvSu4CYG4GeXoa8Ed+IBEtfXXYaGDegbFRL/oQox3eYCFB3TLQoafPRqQpPy/JgmBV7MdLL6iXnC6E5lrPLkaErmof+s4RVGK/2ghw89B9TrPYrVD+hUpWoAY+BszizLAg2Qq26IncFZimeBbhB4rotQsRaprNAs9fuzUCHfW+oTRv5HRzZo4pnJWBtwm8YrmKhtx2vPAs3C82YAWluCzkAPBWx9AVnQ1o4xi9Ih6FMNBkjXxqr4GaRT0BZMga5f4V9WxFB4FKVrVS2FitJSh4lXsocVHiy/lafOQPXRrO2nfvfWiSoU1/BJcS06T3vPS1It0ElklpNfnZoSq+x511LRGX4+1MaXD3NlzkJHvVwEOBOD39QGKEdwnK98sybo1KAL+yvQC0sVeWFROlLAhW//AqCquy7P6UzUAAAAAElFTkSuQmCC"
-		}
-	},
-	{
 		"field_name": "Languages",
 		"content": ["English (C1)","Spanish (C2)","German (B1)"],
 		"icon": {
@@ -39,6 +25,34 @@
 		"content": ["Zurich, Switzerland (B permit)"],
 		"icon": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Home_font_awesome.svg"
+		}
+	},
+	{
+		"field_name": "LinkedIn",
+		"content": ["https://www.linkedin.com/in/msenger"],
+		"icon": {
+			"src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAB10lEQVRYR+2YgU3DMBBF2wlgA8oGMAFlAmACygTABJQJgAkIG8AElAmACSgTABPAf1IjueYcClbslPokq7Wd5J5/zmfH/d4SWn8JmXsFOtVb+3dKD6TcRir1DD+vapta/kNKA/yosp4R+l2+ty3wEPRQF99nBK5dH+lP5XN0HfpcwOOVhH52Rj7S/72WQyhaaYC3PMhL1Y9bBI+GPhDcrQdIlnnpMvSu4CYG4GeXoa8Ed+IBEtfXXYaGDegbFRL/oQox3eYCFB3TLQoafPRqQpPy/JgmBV7MdLL6iXnC6E5lrPLkaErmof+s4RVGK/2ghw89B9TrPYrVD+hUpWoAY+BszizLAg2Qq26IncFZimeBbhB4rotQsRaprNAs9fuzUCHfW+oTRv5HRzZo4pnJWBtwm8YrmKhtx2vPAs3C82YAWluCzkAPBWx9AVnQ1o4xi9Ih6FMNBkjXxqr4GaRT0BZMga5f4V9WxFB4FKVrVS2FitJSh4lXsocVHiy/lafOQPXRrO2nfvfWiSoU1/BJcS06T3vPS1It0ElklpNfnZoSq+x511LRGX4+1MaXD3NlzkJHvVwEOBOD39QGKEdwnK98sybo1KAL+yvQC0sVeWFROlLAhW//AqCquy7P6UzUAAAAAElFTkSuQmCC"
+		}
+	},
+	{
+		"field_name": "GitHub",
+		"content": ["https://github.com/SengerM"],
+		"icon": {
+			"src": "https://cdn-icons-png.flaticon.com/512/25/25231.png"
+		}
+	},
+	{
+		"field_name": "Stack Overflow",
+		"content": ["https://stackoverflow.com/users/8849755/user171780"],
+		"icon": {
+			"src": "https://cdn-icons-png.flaticon.com/512/2111/2111690.png"
+		}
+	},
+	{
+		"field_name": "Website",
+		"content": ["https://msenger.web.cern.ch"],
+		"icon": {
+			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg"
 		}
 	}
 ]

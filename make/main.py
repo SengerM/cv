@@ -36,7 +36,7 @@ def generate_personal_data():
 					for s in data['content']:
 						if data['field_name']=='Email':
 							tags.a(s, href=f'mailto:{s}')
-						elif data['field_name'] in {'Website','LinkedIn','GitHub profile'}:
+						elif data['field_name'] in {'Website','LinkedIn','GitHub','Stack Overflow'}:
 							tags.a(s, href=s)
 						else:
 							tags.div(s)
@@ -351,22 +351,6 @@ if __name__ == '__main__':
 			with tags.div(id='my_name_and_header_container'):
 				tags.div('Matias Senger', id='my_name')
 			generate_personal_data()
-			
-			with tags.div(style='display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; margin-top: 33px;'):
-				soft_skills_data = pandas.read_csv(
-					'data/skills.csv',
-					dtype = {
-						'skill_name': str,
-						'sub_skill_of': str,
-						'kind': str,
-						'category': str,
-						'Skillfulness (1-10)': int,
-						'description': str,
-						'url': str,
-					}
-				).query('kind=="soft"')
-				for _,skill in soft_skills_data.sort_values("Skillfulness (1-10)", ascending=False).iterrows():
-					generate_skill_bubble(skill)
 			
 		with tags.div(cls='main'):
 			generate_experience()
