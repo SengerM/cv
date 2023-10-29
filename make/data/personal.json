@@ -7,13 +7,6 @@
 		}
 	},
 	{
-		"field_name": "Email",
-		"content": ["m.senger@hotmail.com","matias.senger@cern.ch"],
-		"icon": {
-			"src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Aiga_mail.svg"
-		}
-	},
-	{
 		"field_name": "Languages",
 		"content": ["English (C1)","Spanish (C2)","German (B1)"],
 		"icon": {
@@ -22,7 +15,7 @@
 	},
 	{
 		"field_name": "Home address",
-		"content": ["Zurich, Switzerland (B permit)"],
+		"content": ["Zurich, Switzerland"],
 		"icon": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/2/22/Home_font_awesome.svg"
 		}

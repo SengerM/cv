@@ -5,7 +5,7 @@
 		"project_url": "https://github.com/python/cpython",
 		"description": "Bug fix and feature enhancement for help messages in the argparse module of Python.",
 		"my_contribution_url": "https://github.com/python/cpython/pull/27923",
-		"status": "merged",
+		"status": "open",
 		"languages_used": ["python"],
 		"project_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
 	},
