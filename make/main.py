@@ -220,7 +220,7 @@ def generate_presentations_in_conferences_and_events():
 		keep_default_na = False,
 	)
 	
-	tags.h1('Presentations in international conferences and events', id='section_conferences')
+	tags.h1('Presentations in conferences and events', id='section_conferences')
 	with tags.div(style='display: flex; flex-direction: column;'):
 		for _,presentation in presentations_data.sort_values('date', ascending=False).iterrows():
 			with tags.div(
@@ -251,8 +251,10 @@ def generate_presentations_in_conferences_and_events():
 						else:
 							logging.warning(f'Presentation {repr(presentation["presentation_title"])} does not have a "place", skipping this info for this particular presentation.')
 						tags.span(presentation['modality'].capitalize())
-					if 'url' in presentation:
-						with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+					with tags.div(style=f'font-weight: 100; color: {LIGHTER_TEXT_COLOR}'):
+						tags.span(presentation['type'].capitalize())
+						if 'url' in presentation:
+							tags.span(FIELDS_SEPARATOR)
 							tags.a(presentation['url'], href=presentation['url'])
 
 def generate_projects():

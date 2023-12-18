@@ -4,12 +4,13 @@
 		"employer": "UZH",
 		"start_date": "Jun 2020",
 		"end_date": "present",
-		"description": "R&D in ultra fast silicon pixel particle detectors and ASICs for application in future collider experiments. I produced the most complete characterization of the novel TI-LGAD pixel technology. Currently exploring machine learning reconstruction algorithms for the novel RSD pixel technology.",
+		"description": "R&D in ultra fast silicon pixel particle detectors and ASICs for application in future collider experiments. I produced the most complete characterization of the novel TI-LGAD pixel technology up to date. Currently exploring machine learning reconstruction algorithms for the novel RSD pixel technology.",
 		"responsibilities": [
-			"Design and and implement testing procedures and experimental setups for diverse pixel technologies.",
+			"Design and implement testing procedures and experimental setups for diverse pixel technologies.",
 			"Design and implement data analysis methodologies and algorithms.",
+			"Analyze data.",
 			"Evaluate results and compare with state of the art in the ﬁeld.",
-			"Present results in conferences and publication in scientific journals."
+			"Present results in conferences and publish them in scientific journals."
 		],
 		"work_load": "Full-time",
 		"modality": "On-site"
@@ -19,7 +20,7 @@
 		"employer": "UZH",
 		"start_date": "Jun 2020",
 		"end_date": "present",
-		"description": "Teaching lecture assistant in bachelor and master level courses. Some courses in which I have teached: Modern Physics 2, Experimental Methods in Particle Physics, Physics 2 for Life Sciences, Nuclear and Particle Physics Lab 1.",
+		"description": "Teaching lecture assistant in bachelor and master level courses. Some courses in which I have teached: Modern Physics 2, Experimental Methods in Particle Physics, Physics 2 for Life Sciences, Nuclear and Particle Physics Lab 1, etc.",
 		"responsibilities": [
 			"Teach students and answer questions about lecture topics.",
 			"Supervise exams.",
@@ -34,12 +35,12 @@
 		"employer": "CERN",
 		"start_date": "Sep 2022",
 		"end_date": "present",
-		"description": "User of CERN facilities for my doctoral research. In particular, the SPS North Area test beam.",
+		"description": "User of CERN facilities for my doctoral research. In particular, the SPS North Area test beam and the computing facilities.",
 		"work_load": "Full-time",
 		"modality": "Hybrid"
 	},
 	{
-		"position_name": "Research intern",
+		"position_name": "Internship",
 		"employer": "Fermilab",
 		"start_date": "Jun 2019",
 		"end_date": "Dec 2019",
@@ -57,7 +58,7 @@
 		"modality": "On-site"
 	},
 	{
-		"position_name": "Research intern",
+		"position_name": "Internship",
 		"employer": "INTI",
 		"start_date": "Aug 2017",
 		"end_date": "Aug 2018",
@@ -72,11 +73,13 @@
 		"end_date": "Jun 2020",
 		"description": "Production of electronic equipment for musicians. As an entrepreneur, I was in charge of the complete process from conceptualization of products to retail distribution. I had serial-production and in-stock products as well as customized solutions for some clients. Products included FX pedals, musical instruments (such as electric guitars), amplifiers, etc. I started this activity during high school and kept it until I moved to Switzerland for my PhD.",
 		"responsibilities": [
-			"Conceptualize and design products.",
-			"Assembly of products, including electronics, mechanics and packaging.",
-			"Production of documentation.",
-			"Contact with suppliers, retailers and clients.",
-			"Marketing campaigns on social networks."
+			"Product conception.",
+			"Technical design.",
+			"Suppliers.",
+			"Production.",
+			"Marketing.",
+			"Sales.",
+			"Attention to customers."
 		],
 		"work_load": "Part-time",
 		"modality": "On-site"

@@ -9,7 +9,7 @@
 		}
 	},
 	{
-		"degree_level": "Master of Science",
+		"degree_level": "Diploma",
 		"field": "Physical sciences",
 		"school": "UBA",
 		"end_date": "Dec 2019",
@@ -18,24 +18,12 @@
 		}
 	},
 	{
-		"degree_level": "Master of Engineering",
+		"degree_level": "Diploma",
 		"field": "Electronics engineering",
 		"school": "UBA",
 		"end_date": "Sep 2018",
 		"thesis": {
 			"title": "Development of a System for Characterization of Metal-Organic Junctions"
 		}
-	},
-	{
-		"degree_level": "Bachelor of Physics",
-		"field": "Physical sciences",
-		"school": "UBA",
-		"end_date": "Sep 2016"
-	},
-	{
-		"degree_level": "Bachelor of Engineering",
-		"field": "Electronics engineering",
-		"school": "UBA",
-		"end_date": "Sep 2015"
 	}
 ]

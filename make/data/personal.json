@@ -47,5 +47,12 @@
 		"icon": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Globe_icon.svg"
 		}
+	},
+	{
+		"field_name": "Citizenship",
+		"content": ["Argentinian (married to italian wife)"],
+		"icon": {
+			"src": "https://www.svgrepo.com/show/308782/passport-id-identification-citizenship.svg"
+		}
 	}
 ]
