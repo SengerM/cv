@@ -356,7 +356,7 @@ if __name__ == '__main__':
 			
 		with tags.div(cls='main'):
 			generate_experience()
-			generate_projects()
+			# ~ generate_projects()
 			generate_contributions_to_open_source_projects()
 			generate_skills()
 			generate_education()
