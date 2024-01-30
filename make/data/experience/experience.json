@@ -1,14 +1,13 @@
 [
 	{
-		"position_name": "Doctoral researcher",
+		"position_name": "Researcher on Silicon Sensors",
 		"employer": "UZH",
 		"start_date": "Jun 2020",
 		"end_date": "present",
-		"description": "R&D in ultra fast silicon pixel particle detectors and ASICs for application in future collider experiments. I produced the most complete characterization of the novel TI-LGAD pixel technology up to date. Currently exploring machine learning reconstruction algorithms for the novel RSD pixel technology.",
+		"description": "R&D in ultra fast silicon pixel particle detectors and ASICs for application in future collider experiments. I produced the most complete characterization of the novel TI-LGAD pixel technology up to date. Currently exploring machine learning reconstruction algorithms for the novel Resistive Silicon Detector (RSD) pixel technology.",
 		"responsibilities": [
 			"Design and implement testing procedures and experimental setups for diverse pixel technologies.",
 			"Design and implement data analysis methodologies and algorithms.",
-			"Analyze data.",
 			"Evaluate results and compare with state of the art in the ﬁeld.",
 			"Present results in conferences and publish in scientific journals."
 		],
@@ -20,9 +19,9 @@
 		"employer": "UZH",
 		"start_date": "Jun 2020",
 		"end_date": "present",
-		"description": "Teaching lecture assistant in bachelor and master level courses. Some courses in which I have teached: Modern Physics 2, Experimental Methods in Particle Physics, Physics 2 for Life Sciences, Nuclear and Particle Physics Lab 1, etc.",
+		"description": "Lecture assistant in bachelor and master level courses. Some courses in which I have taught: Modern Physics 2, Experimental Methods in Particle Physics, Physics 2 for Life Sciences, Nuclear and Particle Physics Lab 1, etc.",
 		"responsibilities": [
-			"Teach students and answer questions about lecture topics.",
+			"Teach students and answer questions.",
 			"Supervise exams.",
 			"Grade reports and exams.",
 			"Assist professors during lectures."
@@ -35,30 +34,30 @@
 		"employer": "CERN",
 		"start_date": "Sep 2022",
 		"end_date": "present",
-		"description": "User of CERN facilities for my doctoral research. In particular, the SPS North Area test beam and the computing facilities.",
+		"description": "User of CERN computing and large scale experimental facilities for my research on silicon pixels.",
 		"work_load": "Full-time",
 		"modality": "Hybrid"
 	},
 	{
-		"position_name": "Internship",
+		"position_name": "R&D Engineering Internship",
 		"employer": "Fermilab",
 		"start_date": "Jun 2019",
 		"end_date": "Dec 2019",
-		"description": "R&D in dark matter search. Carried out the ﬁrst developments of an experiment to search for dark matter using quantum nonlinear optics. As a side project, also explored applications of the novel skipper CCD technology to quantum imaging. My work was published in Physical Review Quantum, one of the leading journals in the ﬁeld.",
+		"description": "Development and implementation of theoretical models and an experimental setup to test various hypotheses about fundamental physical interactions using silicon Skipper CCD detectors, lasers and non-linear birefringent optical materials. My work was published in Physical Review Quantum, one of the leading journals in the field.",
 		"work_load": "Full-time",
 		"modality": "On-site"
 	},
 	{
-		"position_name": "Junior scientist",
+		"position_name": "Junior Scientist",
 		"employer": "INTI",
 		"start_date": "Aug 2018",
 		"end_date": "May 2019",
-		"description": "Member of the Quantum Standards Laboratory. Worked on several projects that involved hardware design, data production, and data analysis.",
+		"description": "Member of the Quantum Standards Laboratory in the metrology department. Worked on several projects that involved hardware design, data production, and data analysis.",
 		"work_load": "Part-time",
 		"modality": "On-site"
 	},
 	{
-		"position_name": "Internship",
+		"position_name": "R&D Metrology Internship",
 		"employer": "INTI",
 		"start_date": "Aug 2017",
 		"end_date": "Aug 2018",
@@ -71,7 +70,7 @@
 		"employer": "Senger Efectos",
 		"start_date": "Apr 2010",
 		"end_date": "Jun 2020",
-		"description": "Production of electronic equipment for musicians. As an entrepreneur, I was in charge of the complete process from conceptualization of products to retail distribution. I had serial-production and in-stock products as well as customized solutions for some clients. Products included FX pedals, musical instruments (such as electric guitars), amplifiers, etc. I started this activity during high school and kept it until I moved to Switzerland for my PhD.",
+		"description": "Production of electronic equipment for musicians. As an entrepreneur, I was in charge of the complete process from conceptualization of products to customer attention. I had stock products as well as customized solutions for clients. Products included FX pedals, musical instruments (e.g. electric guitars), amplifiers, etc.",
 		"responsibilities": [
 			"Product conception.",
 			"Technical design.",

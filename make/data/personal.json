@@ -8,7 +8,7 @@
 	},
 	{
 		"field_name": "Languages",
-		"content": ["English (C1)","Spanish (C2)","German (B1)"],
+		"content": ["English (C1)","German (B1)","Spanish (C2)"],
 		"icon": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Language_icon.png"
 		}
@@ -50,7 +50,7 @@
 	},
 	{
 		"field_name": "Citizenship",
-		"content": ["Argentinian (married to italian wife)"],
+		"content": ["B EU/EFTA"],
 		"icon": {
 			"src": "https://www.svgrepo.com/show/308782/passport-id-identification-citizenship.svg"
 		}
