@@ -1,6 +1,6 @@
 {
 	"UZH": {
-		"name": "University of Zurich (UZH)",
+		"name": "UZH (University of Zurich)",
 		"logo": {
 			"src": "https://upload.wikimedia.org/wikipedia/en/5/5a/University_of_Zurich_seal.svg"
 		},
@@ -16,7 +16,7 @@
 		"location": "Geneva, Switzerland"
 	},
 	"Fermilab": {
-		"name": "Fermilab (Fermi national Accelerator Laboratory)",
+		"name": "Fermilab (Fermi National Accelerator Laboratory)",
 		"logo": {
 			"src": "https://www.fnal.gov/faw/designstandards/images/FNAL-Logo-NAL-Blue.png"
 		},
@@ -24,7 +24,7 @@
 		"location": "Batavia, Illinois, USA"
 	},
 	"INTI": {
-		"name": "Instituto Nacional de Tecnología Industrial",
+		"name": "National Institute of Industrial Technology",
 		"logo": {
 			"src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/INTI.svg/1200px-INTI.svg.png"
 		},
