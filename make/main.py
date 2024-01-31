@@ -351,6 +351,10 @@ if __name__ == '__main__':
 	with doc.body:
 		with tags.div(cls='sidenav'):
 			with tags.div(id='my_name_and_header_container'):
+				tags.img(
+					src = 'img/Screenshot from 2024-01-30 20-53-26.png',
+					style = 'max-width: 100%; max-height: 222px; border-radius: 50%; object-fit: cover;',
+				)
 				tags.div('Matias Senger', id='my_name')
 			generate_personal_data()
 			
